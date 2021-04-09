@@ -1,0 +1,133 @@
+:root {
+  --primary: #005992;
+  --secondary: #d71149;
+  --black: #222;
+  --white: #fff;
+}
+
+body {
+  font-family: 'SVN-Gilroy';
+  padding: 0;
+  margin: 0;
+  // overflow: hidden;
+}
+
+.container {
+  padding: 8px;
+  overflow: hidden;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+.width-25 {
+  width: 25%;
+}
+
+.width-50 {
+  width: 50%;
+}
+
+.secondary-color {
+  color: var(--secondary);
+}
+
+.table .thead {
+  background: var(--primary);
+}
+
+.table .thead th {
+  color: #fff;
+}
+
+.black-color {
+  color: var(--black) !important;
+}
+
+table, td, th {
+  border: 1px solid var(--black);
+  // color: var(--black);
+  // font-size: 1em;
+  padding: 4px;
+}
+
+table.table--background, table.table--background td, table.table--background th {
+  border: 2px solid var(--white);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table tr.background {
+  background: #c5e9fb;
+}
+
+table tr.background:nth-child(even) {
+  background: #9cddf9;
+}
+
+.table__sub-title {
+  font-size: 1em;
+}
+
+.td__null {
+  background-color: #e8e8e8;
+}
+
+td div:empty {
+  background: #e8e8e8;
+}
+
+.num_1st {
+  margin-left: 2px;
+  padding-right: 4px;
+}
+
+/*
+ * regular-deposit-rate
+*/
+
+.regular-deposit-rate table,
+.regular-deposit-rate td,
+.regular-deposit-rate th {
+  font-size: 1.6em;
+}
+
+/* 
+ * Foreign currency mobilization
+*/
+
+.foreign-currency-mobilization table,
+.foreign-currency-mobilization td,
+.foreign-currency-mobilization th {
+  font-size: 1.6em;
+}
+
+/* (1920x1080) Full HD Display */
+@media screen and (max-width: 1920px) {
+  // .table__sub-title {
+  //   font-size: 1.2em;
+  // }
+
+  // table, td, th {
+  //   font-size: 1.2em;
+  // }
+}
+
+/* (1366x768) WXGA Display */
+@media screen and (max-width: 1366px) {
+  .table__sub-title {
+    font-size: 1em;
+  }
+
+  table, td, th {
+    font-size: 1em;
+  }
+}
